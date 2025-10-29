@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rəqəmsal Bacarıqlar — Portfolio</title>
+    <style>
+        :root {
+            --accent: #0b78a6;
+            --kart: #ffffffcc;
+            --sakit: #054a5f;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Inter, Arial, sans-serif;
+            background-color: aqua;
+        }
+
+        header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .loqo {
+            font-weight: 700;
+            color: #012;
+            letter-spacing: 0.2px;
+        }
+
+        nav a {
+            color: var(--sakit);
+            text-decoration: none;
+            margin-left: 12px;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 22px auto;
+            padding: 0 18px;
+        }
+
+        .qehreman {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .tanitim {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .qehreman h1 {
+            margin: 0 0 6px 0;
+            color: var(--sakit);
+        }
+
+        .qehreman p {
+            margin: 0 0 12px 0;
+            color: #032a34;
+        }
+
+        .duyme {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .sekil-kart {
+            min-width: 220px;
+            max-width: 360px;
+            margin: auto;
+        }
+
+        .sekil-qovluq {
+            background: #ffffffaa;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .sekil-qutu {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #065;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .sekil-qutu img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .kart {
+            background: var(--kart);
+            padding: 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(2, 40, 50, 0.08);
+            margin-top: 10px;
+        }
+
+        section h2 {
+            color: var(--sakit);
+            margin-top: 28px;
+        }
+
+        @media(max-width:640px) {
+            .qehreman {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="loqo">Rəqəmsal Bacarıqlar</div>
+        <nav>
+            <a href="#haqqinda">Haqqında</a>
+            <a href="#bacariqlar">Bacarıqlar</a>
+            <a href="Layihelerimiz.html" target="_blank">Layihələr</a>
+            <a href="#elaqe">Əlaqə</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="qehreman">
+            <div class="tanitim">
+                <h1>Rəqəmsal bacarıqlar — 308</h1>
+                <p>Burada HTML, CSS, JavaScript, video redaktə, onlayn paylaşım və digər rəqəmsal bacarıqlar ilə bağlı
+                    nümunə layihələr yerləşdirilir. Sayt gələcəkdə portfolio və layihə bölmələri ilə genişlənəcək.</p>
+                <a class="duyme" href="Layihelerimiz.html">Layihələrimizi gör</a>
+            </div>
+
+            <div class="sekil-kart">
+                <div class="sekil-qovluq">
+                    <strong>308</strong>
+                    <div class="sekil-qutu">
+                        <img src="sekil.jpg" alt="Rəqəmsal bacarıqlar" class="sekil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="haqqinda">
+            <h2>Haqqında</h2>
+            <div class="kart">
+                <p>Bu sayt rəqəmsal bacarıqlar dərsləri və layihələri üçün nəzərdə tutulub.</p>
+            </div>
+        </section>
+
+        <section id="elaqe">
+            <h2>Əlaqə</h2>
+            <div class="kart">
+                <p>Mail: <strong>308@mail.com</strong></p>
+                <p>WhatsApp: <strong>+994 (012) 433 33 45</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Rəqəmsal Bacarıqlar — Hazırlayan: Abdulhemid Musayev
+    </footer>
+</body>
+
+</html>
